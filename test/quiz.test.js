@@ -1,6 +1,6 @@
 /* jshint esversion: 6 */
 var assert = require('assert');
-var expect = require('expect.js');
+var expect = require('chai').expect;
 
 var Percolation = require('../quiz.js');
 
@@ -110,10 +110,9 @@ describe('Quiz functionality: random openings', function() {
 
 describe('Testing errors', function() {
     var obj = new Percolation(4);
-    context('when testing out of bound coordinates', function() {
-        it('Should throw an error', function() {
-            expect(obj.open(10, 20).to.throw('The slot doesnt exist'));
-        });
-    });
 
+    it('Should throw an error', function() {
+        obj.open(10, 20);
+        expect(obj.open(10, 20)).to.equal(undefined);
+    });
 });

@@ -1,0 +1,26 @@
+{
+  "name": "chapter1",
+  "version": "1.0.0",
+  "description": "Solving coursera problems",
+  "main": "quiz.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrthantBing/coursera-algorithm-nodejs.git"
+  },
+  "author": "Orthant Bing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrthantBing/coursera-algorithm-nodejs/issues"
+  },
+  "homepage": "https://github.com/OrthantBing/coursera-algorithm-nodejs#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.2.0"
+  }
+}
