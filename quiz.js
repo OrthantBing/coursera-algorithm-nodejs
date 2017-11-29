@@ -37,10 +37,10 @@ Percolation.prototype = function() {
      */
     var checkinput = function(gridsize, row, column) {
         if (row <= 0 || column <= 0) {
-            //console.error('The slot doesnt exist');
+            console.error('The slot doesnt exist');
             return false;
         } else if (row > gridsize || column > gridsize) {
-            //console.error('The slot doesnt exist');
+            console.error('The slot doesnt exist');
             return false;
         }
         return true;
